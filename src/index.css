@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bayer Sans Font Definitions */
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-HeavyItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bayer Sans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'Bayer Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Additional utility classes */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 16;
+}
+
+.aspect-h-9 {
+  --tw-aspect-h: 9;
+}
+
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
